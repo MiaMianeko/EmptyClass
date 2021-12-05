@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCalendarCheck } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 class FinishBooking extends React.Component {
 
@@ -14,35 +15,43 @@ class FinishBooking extends React.Component {
     render() {
 
         return (
-            <div className="FinishBooking">
-                <div>
-                    <FaCalendarCheck size={150} style={{ color: 'maroon' }} />
-                </div>
-                <div>
-                    <p>Study Session Booked!</p>
-                </div>
-                <div className = "confirmationList">
+            <div>
+                <div className="FinishBooking">
                     <div>
-                        <p>Session Details</p>
+                        <FaCalendarCheck size={150} style={{ color: 'maroon' }} />
                     </div>
                     <div>
-                        Room#: {this.state.room}
+                        <p>Study Session Booked!</p>
                     </div>
-                    <div>
-                        Building: Hall Building
+                    <div className = "confirmationList">
+                        <div>
+                            <p>Session Details</p>
+                        </div>
+                        <div>
+                            Room#: {this.state.room}
+                        </div>
+                        <div>
+                            Building: Hall Building
+                        </div>
+                        <div>
+                            Time: {this.state.time}
+                        </div>
+                        <div>
+                            Title: {this.state.title}
+                        </div>
+                        <div>
+                            Note: {this.state.note}
+                        </div>
                     </div>
-                    <div>
-                        Time: {this.state.time}
-                    </div>
-                    <div>
-                        Title: {this.state.title}
-                    </div>
-                    <div>
-                        Note: {this.state.note}
-                    </div>
-                </div>
 
+                </div>
+                <div><Link to="/">
+                    <button className="buttons">
+                        Return
+                    </button>
+                </Link></div>
             </div>
+
 
 
         );

@@ -5,7 +5,7 @@ import React from "react";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
-import {BrowserRouter, Route,  Switch} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Switch} from "react-router-dom";
 import JoinOthers from "./Components/JoinOthers";
 import SearchResults from "./Components/SearchResults";
 import FinishBooking from "./Components/FinishBooking";
@@ -18,7 +18,8 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <div className="App-body">
-        <BrowserRouter>
+        <HashRouter>
+
 
 
             <Switch>
@@ -29,7 +30,7 @@ class App extends React.Component {
                 <Route path="/finish" component={FinishBooking}/>
 
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
         </div>
           
         <Footer/>
