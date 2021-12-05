@@ -17,6 +17,7 @@ export default class FinishJoin extends React.Component {
         return (
             <div>
                 <div className="FinishJoin">
+                    <br/>
                     <div>
                         <FaCalendarCheck size={150} style={{color: 'maroon'}}/>
                     </div>
@@ -38,9 +39,10 @@ export default class FinishJoin extends React.Component {
                         </div>
                     </div>
                 </div>
+                <br/>
                 <div><Link to="/">
                     <button className="buttons">
-                        Return
+                        Return to HomePage
                     </button>
                 </Link></div>
 

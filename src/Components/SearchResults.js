@@ -112,7 +112,9 @@ class SearchResults extends React.Component {
             <div className="searchResults">
                 <div className="information">
                     <div>
-                        <p>Available Spaces</p>
+                        <div className="titleSpaces">
+                            Available Spaces
+                        </div>
                     </div>
                     <div className="tableSearch">
                         <input
@@ -125,13 +127,14 @@ class SearchResults extends React.Component {
                     </div>
 
                 </div>
-                <div className="searchResultsTable">
+                <br/>
+                <div className="formDivider2">
                     <table className="table">
                         <thead>
                         <tr>
                             <th>Room #</th>
                             <th>Building Details</th>
-                            <th>Selection</th>
+                            <th>Join Here</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -140,8 +143,7 @@ class SearchResults extends React.Component {
                                 return (
                                     <tr key={index}>
                                         <td>{item.room}</td>
-                                        <td>{item.time}</td>
-                                        <td>Hall Building</td>
+                                        <td className="arrangeTableLeft">Hall Building</td>
                                         <td>
 
                                                 <button className="buttons" onClick={()=>{
@@ -157,6 +159,7 @@ class SearchResults extends React.Component {
                         </tbody>
                     </table>
                 </div>
+                <br/>
                 <div>
                     <Link to="/">
                         <button className="buttons">

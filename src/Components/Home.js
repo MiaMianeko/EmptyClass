@@ -64,7 +64,7 @@ class Home extends React.Component {
                     <div className="orderForms">
                         <div className="Form-container-checkbox">
                             <div>
-                                <label htmlFor="jmsb">EV Building</label>
+                                <label htmlFor="ev">EV Building</label>
                                 <input type="checkbox"
                                        name="ev"
                                        defaultChecked={false}
@@ -80,7 +80,7 @@ class Home extends React.Component {
                             </div>
 
                             <div>
-                                <label htmlFor="jmsb">Hall Building</label>
+                                <label htmlFor="hall">Hall Building</label>
                                 <input type="checkbox"
                                        name="hall"
                                        defaultChecked={true}/>

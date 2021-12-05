@@ -17,6 +17,7 @@ class FinishBooking extends React.Component {
         return (
             <div>
                 <div className="FinishBooking">
+                    <br/>
                     <div>
                         <FaCalendarCheck size={150} style={{ color: 'maroon' }} />
                     </div>
@@ -25,7 +26,7 @@ class FinishBooking extends React.Component {
                     </div>
                     <div className = "confirmationList">
                         <div>
-                            <p>Session Details</p>
+                            <h3>Session Details</h3>
                         </div>
                         <div>
                             Room#: {this.state.room}
@@ -45,9 +46,10 @@ class FinishBooking extends React.Component {
                     </div>
 
                 </div>
+                <br/>
                 <div><Link to="/">
                     <button className="buttons">
-                        Return
+                        Return to HomePage
                     </button>
                 </Link></div>
             </div>
